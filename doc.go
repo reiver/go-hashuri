@@ -4,7 +4,24 @@ Package hashuri parses Hash URIs.
 And works seemlessly with the Go built-in packages: "database/sql", "fmt", "encoding/json".
 
 
-Example
+Hash URI Examples
+
+Hash URIs often look like this:
+
+	 hash://sha256/0ba904eae8773b70c75333db4de2f3ac45a8ad4ddba1b242f0b3cfc199391dd8
+	 \__/   \____/ \______________________________________________________________/
+	  |       |                                    |
+	scheme algorithm                              hash
+
+But, more generally, can look like this:
+
+	 hash://sha256/0ba904eae8773b70c75333db4de2f3ac45a8ad4ddba1b242f0b3cfc199391dd8?apple=one&banana=۲&cherry=3#over-there
+	 \__/   \____/ \______________________________________________________________/ \_________________________/ \________/
+	  |       |                                    |                                            |                   |
+	scheme algorithm                              hash                                        query              fragment
+
+
+Go Example
 
 	import "github.com/reiver/go-hashuri"
 	
