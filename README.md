@@ -2,6 +2,7 @@
 
 Package **hashuri** provides tools for working with **Hash URIs**, for the Go programming language.
 
+And works seemlessly with the Go built-in packages: `"database/sql"`, `"fmt"`, `"encoding/json"`.
 
 ## Documention
 
