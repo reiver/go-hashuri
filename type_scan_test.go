@@ -139,7 +139,7 @@ func TestTypeScan(t *testing.T) {
 			actualType.RawQuery  = "ERROR-RawQuery"
 			actualType.Fragment  = "ERROR-Fragment"
 
-			if err := actualType.Scan(5); nil != err {
+			if err := actualType.Scan(5); nil == err {
 				t.Errorf("For test #%d, expected an error, but did not actually get one: (%T) %q", testNumber, err, err)
 				continue
 			}
