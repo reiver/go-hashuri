@@ -43,6 +43,9 @@ func Parse(dest *Type, value string) error {
 		}
 
 		dest.Algorithm = s[:index]
+		dest.Hash      = ""
+		dest.RawQuery  = ""
+		dest.Fragment  = ""
 
 		s = s[1+index:]
 	}

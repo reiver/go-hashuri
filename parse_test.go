@@ -65,6 +65,11 @@ func TestTypeParse(t *testing.T) {
 
 		var actualType Type
 
+		actualType.Algorithm = "ERROR-Algorithm"
+		actualType.Hash      = "ERROR-Hash"
+		actualType.RawQuery  = "ERROR-RawQuery"
+		actualType.Fragment  = "ERROR-Fragment"
+
 		if err := Parse(&actualType, test.Value); nil != err {
 			t.Errorf("For test #%d, did not expect an error, but actually got one: (%T) %q", testNumber, err, err)
 			t.Errorf("\tvalue:  %q", test.Value)
