@@ -26,7 +26,7 @@ if err := hashuri.Parse(&parsedHashURI, hashURI); nil != err {
 fmt.Printf("Hash URI algorithm: %q \n", parsedHashURI.Algorithm) // Hash URI algorithm: "sha256"
 fmt.Printf("Hash URI hash:      %q \n", parsedHashURI.Hash)      // Hash URI hash:      "0ba904eae8773b70c75333db4de2f3ac45a8ad4ddba1b242f0b3cfc199391dd8"
 fmt.Printf("Hash URI raw query: %q \n", parsedHashURI.RawQuery)  // Hash URI raw query: ""
-fmt.Printf("Hash URI fragment:  %q \n", parsedHashURI.Fragment)  // Hash URI fragment: ""
+fmt.Printf("Hash URI fragment:  %q \n", parsedHashURI.Fragment)  // Hash URI fragment:  ""
 ```
 
 
