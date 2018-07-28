@@ -23,6 +23,8 @@ But, more generally, can look like this:
 
 Go Example
 
+Basic usage of this package looks like this:
+
 	import "github.com/reiver/go-hashuri"
 	
 	var hashURI string = "hash://sha256/0ba904eae8773b70c75333db4de2f3ac45a8ad4ddba1b242f0b3cfc199391dd8"

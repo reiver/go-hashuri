@@ -35,6 +35,8 @@ scheme algorithm                              hash                              
 
 ## Go Example
 
+Basic usage of this package looks like this:
+
 ```go
 import "github.com/reiver/go-hashuri"
 
