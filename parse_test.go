@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestTypeParse(t *testing.T) {
+func TestParse(t *testing.T) {
 
 	tests := []struct{
 		Value    string
